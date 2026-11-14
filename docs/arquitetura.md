@@ -30,8 +30,6 @@ flowchart TB
     STD --> OUT["Saídas estruturadas para análise"]
 ```
 
-Diagrama ilustrativo, limitado às responsabilidades arquiteturais. Não reproduz configurações, regras internas nem sequências detalhadas do código.
-
 ## Responsabilidades por camada
 
 | Camada | Objetivo | Considerações de engenharia |
@@ -54,19 +52,6 @@ Diagrama ilustrativo, limitado às responsabilidades arquiteturais. Não reprodu
 
 **Testabilidade.** Os comportamentos críticos podem ser avaliados com cenários sintéticos, sem depender de credenciais ou dados fiscais reais durante os testes.
 
-**Segurança e privacidade.** Segredos, dados de empresas, registros fiscais e detalhes internos de operação não são publicados.
+## Sobre a versão em produção
 
-## Limites desta apresentação
-
-Este repositório contém somente material de arquitetura e apresentação profissional. Não disponibiliza:
-
-- Código-fonte, DAGs, scripts ou definições de infraestrutura;
-- Parâmetros internos de acesso, autenticação ou recuperação;
-- Credenciais, arquivos operacionais ou dados de contribuintes;
-- Configurações, testes executáveis ou dependências instaláveis.
-
-O escopo descrito é técnico e demonstrativo. A implementação operacional é mantida separadamente em repositório privado. A disponibilidade e os contratos dos serviços externos devem ser confirmados pelos seus provedores.
-
----
-
-*Projeto de portfólio independente de Abimael Brilhante; sem vínculo oficial com a Receita Federal ou o SERPRO.*
+A versão utilizada em produção é mantida em um repositório privado por conter dados sensíveis.
