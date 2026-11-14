@@ -5,15 +5,13 @@
 
 [English version](README.en.md) · [Arquitetura técnica](docs/arquitetura.md)
 
-> **Apresentação técnica do projeto.** Este repositório público documenta a arquitetura, o escopo e as competências de engenharia envolvidas. A implementação operacional e o código-fonte permanecem em ambiente privado.
+> Este repositório apresenta a arquitetura, as tecnologias e os principais aspectos de engenharia da solução. A versão utilizada em produção é mantida em um repositório privado por conter dados sensíveis.
 
 ## Visão geral
 
 O **CBS API Data Pipeline** é uma solução de engenharia de dados voltada à integração com serviços de apuração da Contribuição sobre Bens e Serviços (CBS), no contexto da Reforma Tributária brasileira.
 
 O desafio é transformar a obtenção de dados fiscais por APIs assíncronas em um processo **rastreável, recuperável e preparado para análise**, considerando dependências externas, diferentes estados de processamento e a necessidade de preservar a integridade das informações recebidas.
-
-Este portfólio demonstra a arquitetura da solução, sem disponibilizar rotinas internas, credenciais, dados fiscais ou artefatos executáveis.
 
 ## Arquitetura em alto nível
 
@@ -26,8 +24,6 @@ flowchart LR
     C --> D["Padronização e consolidação"]
     D --> E[("Dados estruturados<br/>para análise")]
 ```
-
-A representação acima é **conceitual**: descreve as responsabilidades dos componentes, não a implementação interna nem o detalhamento das regras técnicas.
 
 ## Competências demonstradas
 
@@ -45,13 +41,9 @@ A representação acima é **conceitual**: descreve as responsabilidades dos com
 
 **Python** · **Apache Airflow** · **Docker / Docker Compose** · **PostgreSQL** · **SQLite** · **pandas** · **HTTP/REST** · **JSON / CSV** · **GitHub Actions**
 
-As tecnologias estão listadas para apresentar o repertório técnico empregado na versão de demonstração. Detalhes de configuração e integração não fazem parte desta publicação.
-
 ## Escopo e evolução
 
-A solução contempla a arquitetura de coleta, acompanhamento e preparação de informações relacionadas à apuração CBS, incluindo cenários de débitos e créditos. A expansão de integrações e a evolução operacional são tratadas em ambiente privado.
-
-Este repositório **não oferece um serviço público, instalação executável ou acesso aos dados coletados**.
+A solução contempla a coleta, o acompanhamento e a preparação de informações relacionadas à apuração CBS, incluindo cenários de débitos e créditos.
 
 ## Documentação
 
@@ -63,7 +55,3 @@ Este repositório **não oferece um serviço público, instalação executável 
 Projeto de portfólio de **Abimael Brilhante**, com foco em engenharia de dados, integração de sistemas, automação e domínio de processos fiscais.
 
 **Perfil técnico:** [GitHub — AbimaelBrilhante](https://github.com/AbimaelBrilhante).
-
-*Projeto independente, sem vínculo oficial com a Receita Federal ou o SERPRO. As informações apresentadas são de caráter técnico e demonstrativo.*
-
-© 2026 Abimael Brilhante. Todos os direitos reservados. A publicação desta documentação não autoriza a reprodução ou exploração comercial da implementação privada.
